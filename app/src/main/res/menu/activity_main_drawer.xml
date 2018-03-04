@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_games"
+            android:title="Игры" />
+        <item
+            android:id="@+id/nav_calculator"
+            android:title="Калькулятор" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Настройки" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:title="Написать в поддержку" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="Соглашение" />
+    </group>
+
+    <!--<item android:title="Подписка">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_status"-->
+                <!--android:title="Статус подписки" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_due"-->
+                <!--android:title="Истекает через" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

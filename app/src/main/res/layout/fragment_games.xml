@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="#00fff9f9"
+        android:dividerHeight="0dp"
+        android:childDivider="#CABBBBBB"
+        android:groupIndicator="@null"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutTariffEnded"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_sm"
+                android:text="Срок Вашего тарифа истек." />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:text="Продлить"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:textColor="@color/textColorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/btnExtendTariffGames"
+                    android:background="@drawable/ripple_red"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingHorizontalGames"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_marginBottom="-7dp"
+            android:layout_marginTop="-7dp"
+            android:indeterminate="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/activity_horizontal_margin"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@android:color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutTitle"
+                android:layout_marginBottom="12dp"
+                android:textColor="#222"
+                android:textAlignment="center"
+                android:text="Договор Публичной Оферты"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="Присоединяясь к настоящему Договору, пользуясь Сервисом BettyMates и оставляя свои данные в Сервисе BettyMates, (далее – BM), путем заполнения полей регистрации, Пользователь:"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="\t\t\u2022 подтверждает, что все указанные им данные принадлежат лично ему;
+\n\t\t\u2022 подтверждает и признает, что им внимательно в полном объеме прочитан данный Договор об обработке персональных данных, текст договора и условия обработки персональных данных ему понятны;
+\n\t\t\u2022 дает согласие на обработку BM предоставляемых в составе информации;
+\n\t\t\u2022 персональных данных в целях заключения между ним и BM настоящего Договора, а также его последующего исполнения;
+\n\t\t\u2022 выражает согласие с условиями обработки персональных данных без оговорок и ограничений;
+\n\t\t\u2022 соглашается со всеми правилами пользования BM указанными в этом Договоре."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="Все лица заполнившие сведения, составляющие персональные данные в данном BM, а также разместившие иную информацию обозначенными действиями подтверждают свое согласие на обработку персональных данных и их передачу модератору обработки персональных данных."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="Пользователи BM направляют свои персональные данные модератору в целях получения какой-либо необходимой информации, принадлежащей BM."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="Пользователь, принимая условия настоящего Договора, выражает свою заинтересованность и полное согласие, а также предоставляет право модератору BM осуществлять следующие действия (операции) с персональными данными, включая сбор, систематизацию, накопление, хранение, уточнение (обновление, изменение), использование, уничтожение, согласно Закону РК «О персональных данных и их защите» от 21.05.2013 г. и иных нормативных актов, гарантирующих права физического лица (субъекта персональных данных) на защиту, уточнение, блокирование или уничтожение его персональных данных."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="BM не гарантирует точность информаций. Настоятельно рекомендуется перепроверять данные. Предоставляя информацию BM не гарантирует вам выигрыш или же пользу, а просто предоставляет информацию Пользователю."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="BM имеет право в любой момент изменять условия настоящего Договора в одностороннем порядке без предварительного согласования с Пользователями, обеспечивая при этом публикацию измененных условий в BM."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="К настоящему Договору и отношениям между пользователем и BM, возникающим в связи с применением данного Договора, подлежит применению право Республики Казахстан."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColor="#222"
+                android:text="В случае возникновения вопросов, Пользователь может обратиться по электронному адресу betmates7@gmail.com или по тел. номеру +7 778 801 70 86(Whatsapp) или задать вопросы в группах Вконтакте(https://vk.com/bettymates) и Инстаграм(https://www.instagram.com/bettymates)."/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

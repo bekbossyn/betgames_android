@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:ems="10"
+        android:textColor="@color/textColorPrimary"
+        android:hint="Если есть пожелания, напишите здесь или в группе Вконтакте: vk.com/bettymates ..."
+        android:textColorHint="@color/textColorSecondary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editSupport"
+        android:maxLength="1000"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить"
+        android:id="@+id/btnSendSupport"
+        android:textAllCaps="false"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ripple_red"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>

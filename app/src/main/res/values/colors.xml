@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#388E3C</color>
+    <color name="colorPrimaryDark">#1B5E20</color>
+    <color name="colorAccent">#E64A19</color>
+    <color name="textColorPrimary">#FFF</color>
+    <color name="textColorSecondary">#b3ffffff</color>
+    <color name="textColorHint">#80ffffff</color>
+    <color name="textColorGreen">#3faf50</color>
+    <color name="textColorLightGreen">#bada56</color>
+    <color name="colorDivider">#80ffffff</color>
+
+    <color name="colorBlue">#214976</color>
+    <color name="colorRed">#E64A19</color>
+    <color name="colorBlack">#222</color>
+    <color name="colorRedPressed">#BF360C</color>
+    <color name="colorBluePressed">#19395c</color>
+    <color name="colorCountryBg">#38000000</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorLightTransparent">#23ffffff</color>
+    <color name="colorDarkTransparent">#b7000000</color>
+
+
+    <!-- Intro colors -->
+    <color name="first_slide_background">#E91E63</color>
+    <color name="first_slide_buttons">#880E4F</color>
+
+    <color name="second_slide_background">#9C27B0</color>
+    <color name="second_slide_buttons">#4A148C</color>
+
+    <color name="third_slide_background">#009688</color>
+    <color name="third_slide_buttons">#004D40</color>
+
+    <color name="fourth_slide_background">#795548</color>
+    <color name="fourth_slide_buttons">#3E2723</color>
+
+    <color name="custom_slide_background">#3F51B5</color>
+    <color name="custom_slide_buttons">#1A237E</color>
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/bg"
+    tools:context="myapps.kz.betgames.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutCountries"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="@color/colorCountryBg"
+        android:orientation="vertical">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/spinnerCountries"
+            android:layout_weight="1"
+            android:paddingLeft="4dp"
+            android:entries="@array/countries" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/layoutCountries"
+        android:layout_marginTop="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layoutCountryCode"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:paddingTop="2dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtCountryCode"
+                    android:textSize="18sp"
+                    android:textColor="@color/textColorPrimary"
+                    android:text="+7"/>
+                <View
+                    android:layout_width="45dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/textColorHint" />
+            </LinearLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editPhone"
+                android:inputType="number"
+                android:hint="Номер телефона"
+                android:textCursorDrawable="@null"
+                android:layout_toRightOf="@+id/layoutCountryCode"
+                android:textColor="@color/textColorPrimary"
+                android:textColorHint="@color/textColorHint"
+                android:backgroundTint="@color/textColorHint"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCode"
+            android:inputType="number"
+            android:hint="Код"
+            android:textCursorDrawable="@null"
+            android:textColor="@color/textColorPrimary"
+            android:textColorHint="@color/textColorHint"
+            android:backgroundTint="@color/textColorHint"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnReceiveCode"
+                android:text="Получить код"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/ripple_red"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLogin"
+                android:text="Войти"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/ripple_red"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanelLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+</RelativeLayout>

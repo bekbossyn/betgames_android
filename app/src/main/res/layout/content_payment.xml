@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="myapps.kz.betgames.PaymentActivity"
+    tools:showIn="@layout/app_bar_payment"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Стоимость подписки на тариф PRO"
+                android:textSize="@dimen/text_sm"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="12dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="6dp">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/price"
+                        android:layout_marginRight="8dp"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="1 месяц"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1990 рублей"
+                        android:textSize="@dimen/text_sm"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="6dp">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/price"
+                        android:layout_marginRight="8dp"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="3 месяца"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5500 рублей"
+                        android:textSize="@dimen/text_sm"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/price"
+                        android:layout_marginRight="8dp"/>
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="12 месяцев"
+                        android:layout_marginTop="4dp"
+                        android:textSize="@dimen/text_sm"
+                        android:textColor="@color/colorBlack"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="18000 рублей"
+                        android:textSize="@dimen/text_sm"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/colorBlack"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Как оплатить?"
+                    android:textSize="@dimen/text_sm"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Оплату можно произвести через любой QIWI терминал:"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1. Переведите средства на Qiwi Кошелек номера +77074443333;"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2. Затем в поле 'Комментарий к платежу' укажите Ваш номер телефона, с которого зарегистрированы в системе BettyMates и сумму оплаты;"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3. После проверки платежа модератором Вам откроют доступ."
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* Если у Вас остались вопросы по оплате, напишите в службу поддержки в разделе 'Написать в поддержку' или в группе ВК \nvk.com/bettymates"
+                    android:textSize="@dimen/text_sm"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

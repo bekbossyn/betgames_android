@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:text="Выгода"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textProfit"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_sm"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editProfit"
+            android:inputType="number"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:text="15000000000"
+            android:textSize="@dimen/text_md"
+            android:textColor="@color/textColorPrimary"
+            android:textAlignment="center"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toRightOf="@+id/textProfit"
+            android:layout_toEndOf="@+id/textProfit"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:paddingTop="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:id="@+id/profitLayout"
+            android:visibility="visible">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="–"
+                android:id="@+id/minusProfit"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_md"
+                android:background="@drawable/ripple_red"
+                android:padding="5dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="+"
+                android:id="@+id/plusProfit"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_md"
+                android:background="@drawable/ripple_blue"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:text="Коэф."
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textCoef"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_sm"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCoef"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:text="1.5"
+            android:imeOptions="actionDone"
+            android:textSize="@dimen/text_md"
+            android:textColor="@color/textColorPrimary"
+            android:textAlignment="center"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toRightOf="@+id/textCoef"
+            android:layout_toEndOf="@+id/textCoef"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:paddingTop="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:id="@+id/coefLayout"
+            android:visibility="visible">
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="–"
+                android:id="@+id/minusCoef"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_md"
+                android:background="@drawable/ripple_red"
+                android:padding="5dp"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:text="+"
+                android:id="@+id/plusCoef"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="@dimen/text_md"
+                android:background="@drawable/ripple_blue"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Ставка"
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAmount"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_sm"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editAmount"
+            android:inputType="number"
+            android:ems="10"
+            android:enabled="false"
+            android:text="3335"
+            android:textSize="@dimen/text_md"
+            android:textColor="@color/textColorPrimary"
+            android:textAlignment="center"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_toRightOf="@+id/textAmount"
+            android:layout_toEndOf="@+id/textAmount"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:paddingTop="4dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:id="@+id/amountLayout"
+            android:visibility="visible">
+
+            <Button
+                android:layout_width="85dp"
+                android:layout_height="40dp"
+                android:id="@+id/btnCopy"
+                android:textAllCaps="false"
+                android:text="В буфер"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/ripple_blue"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:text="Общий расход: 120000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_md"
+            android:textColor="@color/textColorPrimary"
+            android:id="@+id/textTotalSpent" />
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:weightSum="7">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="#"
+            android:textAlignment="center"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_sm"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Выгода"
+            android:textAlignment="center"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_sm"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Коэф."
+            android:textAlignment="center"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_sm"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ставка"
+            android:textAlignment="center"
+            android:textColor="@color/textColorPrimary"
+            android:textSize="@dimen/text_sm"
+            android:textStyle="bold"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:padding="1dp">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listCalculator" />
+    </RelativeLayout>
+
+</LinearLayout>

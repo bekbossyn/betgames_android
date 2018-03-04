@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_reset"
+        android:orderInCategory="200"
+        android:title="Восстановить"
+        android:icon="@drawable/ic_reset"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item
+        android:id="@+id/action_silent"
+        android:orderInCategory="200"
+        android:title="Тихо"
+        android:icon="@drawable/ic_silent"
+        app:showAsAction="ifRoom"
+        ></item>
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="200"
+        android:title="Обновить"
+        android:icon="@drawable/ic_refresh"
+        app:showAsAction="ifRoom"
+        ></item>
+</menu>
